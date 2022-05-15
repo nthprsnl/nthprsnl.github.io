@@ -1,2 +1,2 @@
-#nthprsnl.github.io
+# nthprsnl's cool website
 making the website, give me a century...
