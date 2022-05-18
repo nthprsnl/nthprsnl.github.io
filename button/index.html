@@ -7,8 +7,13 @@
 <script src="/assets/click.js"></script>
 <script>
     var i = localStorage.getItem("value");
+    var lastI = 0;
     function update() {
+        lastI = i
         i++
+        if (lastI - i > 1) {
+            i = lastI
+        }
         localStorage.setItem("value", i);
         document.getElementById("i").innerHTML = i;
     }
