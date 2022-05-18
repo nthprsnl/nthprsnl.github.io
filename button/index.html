@@ -11,7 +11,7 @@
     function update() {
         lastI = i
         i++
-        if (lastI - i > 1) {
+        if (lastI - i > 0) {
             i = lastI
         }
         localStorage.setItem("value", i);
@@ -42,7 +42,7 @@
             <br> CLICK THE BUTTON.
             <br> CLICKED IT OVER <span id="i">0</span>
             <br> TIMES.
-            <br><button style="border: none; border-radius: 5px; font-size: 30px; margin:5px; font-family: consolas;" onclick="localStorage.setItem('value', 0);">CLICK TO CLEAR DATA</button>
+            <br><button style="border: none; border-radius: 5px; font-size: 30px; margin:5px; font-family: consolas;" onclick="localStorage.setItem('value', 0); document.getElementById("i").innerHTML = i;">CLICK TO CLEAR DATA</button>
         </div></div>
         <div class="item4">nthprsnl 2022, or something</div>
         <script>document.getElementById("i").innerHTML = i;</script>
