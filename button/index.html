@@ -6,9 +6,10 @@
 <title>nthprsnl's cool website</title>
 <script src="/assets/click.js"></script>
 <script>
-    var i = 0;
+    var i = localStorage.getItem("value");
     function update() {
         i++
+        localStorage.setItem("value", i);
         document.getElementById("i").innerHTML = i;
     }
 </script>
@@ -36,6 +37,7 @@
             <br> CLICK THE BUTTON.
             <br> CLICKED IT OVER <span id="i">0</span>
             <br> TIMES.
+            <br><button style="border: none; border-radius: 5px; font-size: 30px; margin:5px; font-family: consolas;" onclick="localStorage.setItem('value', 0);">CLICK TO CLEAR DATA</button>
         </div></div>
         <div class="item4">nthprsnl 2022, or something</div>
     </div></center>
