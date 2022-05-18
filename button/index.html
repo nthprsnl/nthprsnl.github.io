@@ -4,12 +4,19 @@
 <style>
 </style>
 <title>nthprsnl's cool website</title>
-<script src="assets/click.js"></script>
+<script src="/assets/click.js"></script>
+<script>
+    var i = 0;
+    function update() {
+        i++
+        document.getElementById("i").innerHTML = i;
+    }
+</script>
 <link rel="stylesheet" href="/assets/index.css">
 </head>
 <body>
     <center><div class="main">
-        <div class="item1">nthprsnl's website | index.html</div>
+        <div class="item1">nthprsnl's website | button.html</div>
         <div class="item2">
             <div class="btn-container">
                 <img src="/assets/icons/3.png" class="button" onclick="window.location.href = '/'">
@@ -21,10 +28,15 @@
                 <img src="/assets/icons/4.png" class="button" onclick="clickButton(); window.location.href = '/button/'">
             </div>
         </div>
-        <div class="item3">
-            <p>Hello, my name is nthprsnl / nothingpersonal. I mainly host simple HTML projects here for other people to use/see! <br><br> as you can see, this website is very incomplete.. <br><br> but uhh, i hope you like it in its current state <br><br> rip mobile users lmao</p> 
-            <img src="/assets/deaj.png">
-        </div>
+        <div class="item3"><div>
+            BUTTON.<br>
+            CLICKY BUTTON. <br>
+            <img src="/assets/icons/4.png" id="BIG" onclick="clickButton(); update();">
+            <br><br> __________
+            <br> CLICK THE BUTTON.
+            <br> CLICKED IT OVER <span id="i">0</span>
+            <br> TIMES.
+        </div></div>
         <div class="item4">nthprsnl 2022, or something</div>
     </div></center>
 </body>

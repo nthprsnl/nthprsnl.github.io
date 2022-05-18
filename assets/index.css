@@ -82,6 +82,16 @@ body::after {
   src: url(./Consolas.ttf);
 }
 
+#BIG {
+  width: 360px;
+  margin: 5px;
+  margin-bottom: 15px;
+  box-shadow: 0 19px #999;
+  cursor: pointer;
+  float:left;
+  border-radius: 35px;
+  height: 360px;
+}
 .item4 {
   background-color: rgb(128, 128, 128);
   border-radius: 5px;
@@ -91,12 +101,17 @@ body::after {
   align-items: center;
 }
 
-.item2 img:active {
+#BIG:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(14px);
+}
+
+.button:active {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
 
-.item2 img {
+.button {
   width: 60px;
   margin: 5px;
   margin-bottom: 15px;
@@ -106,6 +121,7 @@ body::after {
   border-radius: 5px;
   height: 60px;
 }
+
 .main>div {
   word-wrap: break-word;
   display: flex;
