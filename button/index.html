@@ -9,11 +9,11 @@
     var i = localStorage.getItem("value");
     var lastI = 0;
     function update() {
-        lastI = i
-        i++
         if (lastI - i > 0) {
             i = lastI
         }
+        lastI = i
+        i++
         localStorage.setItem("value", i);
         document.getElementById("i").innerHTML = i;
     }
