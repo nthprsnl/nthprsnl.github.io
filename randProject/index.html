@@ -4,12 +4,13 @@
 <style>
 </style>
 <title>nthprsnl's cool website</title>
-<script src="assets/click.js"></script>
+<script src="/assets/click.js"></script>
+<script src="https://randojs.com/2.0.0.js"></script>
 <link rel="stylesheet" href="/assets/index.css">
 </head>
 <body>
     <center><div class="main">
-        <div class="item1">nthprsnl's website | index.html</div>
+        <div class="item1">nthprsnl's website | randProject.html</div>
         <div class="item2">
             <div class="btn-container">
                 <img src="/assets/icons/3.png" class="button" onclick="window.location.href = '/'">
@@ -22,10 +23,12 @@
             </div>
         </div>
         <div class="item3">
-            <p>Hello, my name is nthprsnl / nothingpersonal. I mainly host simple HTML projects here for other people to use/see! <br><br> as you can see, this website is very incomplete.. <br><br> but uhh, i hope you like it in its current state <br><br> rip mobile users lmao</p> 
-            <img src="/assets/deaj.png">
+            <div>Get a random turbowarp project from the internet!
+            <br><button style="border: none; border-radius: 5px; font-size: 30px; height: 35px; margin:5px; font-family: consolas;" onclick="var rnvl = rando(1, 60000000); document.getElementById('rnid').src = 'https://turbowarp.org/'.concat(rnvl).concat('/embed'); console.log('returned:', rnvl); document.getElementById('rnid_val').innerHTML = rnvl;">GENERATE A NEW ONE</button>
+            <br><br><iframe id="rnid" src="" width="800" height="600" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            <br>id: <span id="rnid_val">NOT GENERATED</span> (sorry if we got your ID)</div>
         </div>
-        <div class="item4">nthprsnl 2022, or something</div>
+        <div class="item4">nthprsnl 2022, or something. (not affiliated with scratch or turbowarp)</div>
     </div></center>
 </body>
 </html>
