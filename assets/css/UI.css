@@ -1,0 +1,147 @@
+/* comment example */
+/* UI.CSS FOR MOST UI STUFF */
+body {
+    background-color: rgb(29, 29, 29);
+    margin: 5%;
+}
+/* UI divs */
+.header {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.content {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+.cntnheader {
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    margin: 3px; 
+}
+.main {
+    padding-left: 20px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    background-color: rgb(51,51,51);
+    border-radius: 5px; 
+    color: white;
+    font-size: 20px;
+    margin: 3px;
+}
+
+/* button UI divs */
+.buttons {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    background: linear-gradient(to right, rgb(51,51,51), rgb(30,30,30));
+}
+.buttons * {
+    font-size: 22px;
+    padding: 5px;
+    color: white;
+    background-color: rgb(40, 40, 40);
+    margin: 2px;
+    border-radius: 4px;
+    text-decoration: none;
+    float: left;
+}
+
+/* UI mode */
+.uidefault {
+    padding: 15px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    background-color: rgb(51, 51, 51); 
+    border-radius: 5px; 
+    color: white;
+    text-align: center;
+    flex-grow: 1;
+    margin: 3px; 
+}
+.uismall {
+    padding: 2px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    background-color: rgb(51,51,51);
+    border-radius: 5px; 
+    color: white;
+    text-align: center;
+    flex-grow: 1;
+    margin: 3px;
+}
+/* fonts */
+.font-default {
+    font-family: pixel;
+}
+.font-squares {
+    font-family: 'squares';
+}
+
+/* animations */
+.hoverable:hover {
+    background-color: rgb(48, 48, 48);
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.buttons a:hover {
+    background-color: rgb(32, 32, 32);
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+/* colors */
+.purple {
+    border-top: 6px solid rgb(203, 139, 255);
+}
+.green {
+    border-top: 6px solid rgb(118, 255, 118);
+}
+.blue {
+    border-top: 6px solid rgb(93, 93, 255);
+}
+.yellow {
+    border-top: 6px solid rgb(255, 225, 93);
+}
+.red {
+    border-top: 6px solid rgb(255, 93, 93);
+}
+
+.purplebg {
+    background-color: rgb(203, 139, 255);
+}
+.greenbg {
+    background-color: rgb(118, 255, 118);
+}
+.bluebg {
+    background: linear-gradient(to right, rgb(93, 93, 255), rgb(46, 46, 255));
+}
+.yellowbg {
+    background: linear-gradient(to right, rgb(255, 225, 93), rgb(255, 255, 50));
+}
+.redbg {
+    background: linear-gradient(to right, rgb(255, 93, 93), rgb(255, 50, 50));
+}
+
+/* fonts */
+@font-face {
+    font-family: squares;
+    src: url('/assets/fonts/SQUARES.ttf');
+}
+@font-face {
+    font-family: pixel;
+    src: url('/assets/fonts/pixels.ttf');
+}
+
+/* mobile comp */
+@media screen and (max-width: 840px) {
+    .header {
+        flex-direction: column;
+    }
+    .content {
+        flex-direction: column;
+    }
+    .buttons {
+        flex-direction: column;
+    }
+}
