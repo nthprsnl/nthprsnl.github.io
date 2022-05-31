@@ -1,2 +1,2 @@
 # nthprsnl's cool website
-making the website, give me a century...
+REDESIGNING. TO VIEW THE OLD CODEBASE, VIEW THE OLD BRANCH
