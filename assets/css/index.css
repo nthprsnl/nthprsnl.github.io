@@ -1,0 +1,16 @@
+#cattoimg {
+  width: 80%;
+  height: auto;
+}
+#cube canvas {
+  width: 80%;
+  height: auto;
+}
+@keyframes spin {
+    0% {
+      transform: rotateY(0deg);
+    }
+    100% {
+      transform: rotateY(360deg);
+    }
+}
