@@ -6,13 +6,12 @@
     <title>NTHPRSNL'S WEBSITE</title>
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <link rel="stylesheet" href="/assets/css/UI.css">
-    <link rel="stylesheet" href="/assets/css/index.css">
+    <link rel="stylesheet" href="./page.css">
     <!-- get rando.js -->
     <script src="https://randojs.com/2.0.0.js"></script>
     <!-- get jquery from a cdn-->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <!-- github copilot can you insert p5.js for me please -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.js"></script>
+    <script src="./qrcode.min.js"></script>
     <script src="/assets/js/index.js"></script>
 </head>
 <body>
@@ -26,27 +25,26 @@
         <div class="content">
             <h2 class="cntnheader yellowbg font-default">PAGES</h2>
             <div id="buttons" class="buttons yellow uismall"></div>
-            <h2 class="cntnheader rainbowbg font-default">OTHER STUFF</h2>
-            <div class="main rainbow font-default">
-                <P>alright heres stuff</P>
-                <div id="othermenu">
-                    <a href="./qrcode">qrcode</a>
-                    <button id="speen" onclick="spin()">do a barrel roll</button>
+            <h2 class="cntnheader bluebg font-default">QRCODE GENERATOR</h2>
+            <div class="main blue font-default">
+                <div id="genform">
+                    <p>Generate a simple qr code
+                    <br><input type="text" id="qrtext" placeholder="Enter text here">
+                    <button id="generate" onclick="generate()">Generate</button>
+                    </p>
                 </div>
-                <P>im.. just going to keep the cube</P>
-                <div id="cube"></div>
+                <div id="qrcode"></div>
                 <script>
-                    function spin() {
-                        var element = document.getElementById("container")
-                        var element2 = document.getElementById("speen")
-                        element.classList.toggle("spin");
-                        element2.classList.toggle("spinbck");
+                    var qrcode = new QRCode(document.getElementById('qrcode'), "https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+                    function generate() {
+                        qrcode.clear()
+                        qrcode.makeCode(document.getElementById('qrtext').value)
                     }
                 </script>
+                <p>(please don't use this for malicious purposes)</p>
             </div>
         </div>
     </div>
-    <script src="./sketch.js"></script>
     <script>splash("splashtext");</script>
 
 </body>

@@ -1,0 +1,17 @@
+#qrtext {
+    font-family: pixels;
+    font-size: 20px;
+    padding: 4px;
+    text-align: center;
+    border-radius: 2px;
+    border: none;
+}
+#genform {
+    margin-bottom: 5px;
+}
+#generate {
+    margin: 0px;
+}
+#qrcode img{
+    border-radius: 5px;
+}

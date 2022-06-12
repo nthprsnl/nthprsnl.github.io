@@ -28,7 +28,6 @@ var styles2 = `
         font-family: Segoe UI;
     }
 `
-
 $(function(){
     $("#buttons").load("/assets/other/buttons.html"); 
     //load master.html to the body element
